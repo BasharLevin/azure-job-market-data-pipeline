@@ -33,6 +33,16 @@ processed/*.csv          job_ads / skills / job_ad_skills
                          SQL analytics queries
 ```
 
+## Project Screenshots
+
+### Azure SQL Database
+
+![Azure SQL Database screenshot](azure_sc1.png)
+
+### Azure Storage / Pipeline Output
+
+![Azure project screenshot](azur_scr2.png)
+
 ## Tech Stack
 
 - Python
