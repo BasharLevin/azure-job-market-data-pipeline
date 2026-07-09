@@ -42,6 +42,7 @@ processed/*.csv          job_ads / skills / job_ad_skills
 - Azure SQL Database
 - SQLAlchemy
 - pyodbc
+- Streamlit
 - SQL
 - GitHub
 
@@ -64,7 +65,8 @@ azure-job-market-data-pipeline/
 │   ├── extract_jobs.py
 │   ├── transform_jobs.py
 │   ├── upload_to_blob.py
-│   └── load_to_sql.py
+│   ├── load_to_sql.py
+│   └── dashboard_app.py
 ├── main.py
 ├── requirements.txt
 └── README.md
@@ -189,6 +191,25 @@ sql/analytics_queries.sql
 ```
 
 These can be run in Azure Data Studio, SQL Server Management Studio, or the Azure Portal query editor.
+
+## Interactive Dashboard
+
+The project includes a Streamlit dashboard that connects directly to Azure SQL Database and visualizes the processed job market data.
+
+Run the dashboard locally with:
+
+```bash
+streamlit run src/dashboard_app.py
+```
+
+The dashboard includes:
+
+- KPI cards for total job ads, skills, employers, and cities
+- Top requested skills
+- Jobs by city, employer, and occupation
+- Must-have vs nice-to-have skill demand
+- Filters for city, skill type, and occupation
+- A searchable job ads table with links to the original postings
 
 ## Environment Variables
 
